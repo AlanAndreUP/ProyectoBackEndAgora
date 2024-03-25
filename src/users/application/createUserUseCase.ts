@@ -30,6 +30,7 @@ export class CreateUserUseCase {
             role
          );
          if(user)
+         this.userRepository.createUser(user);
             this.notificationNewUser.run(user)
          return user
       } catch (error){

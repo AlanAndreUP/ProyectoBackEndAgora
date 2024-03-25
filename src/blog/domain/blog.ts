@@ -15,6 +15,7 @@ export class Blog {
         readonly image: string,
         readonly author: string,
         readonly date: Date,
+        readonly lenguaje : string,
         readonly type: BlogType
     ){}
 }

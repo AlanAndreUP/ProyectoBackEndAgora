@@ -11,9 +11,9 @@ export class CreateBlogController {
                 return res.status(500).json({ success: false, message: "Error, No Existe Variable de Incriptacion" });
             }
             
-            const { title, previewContent, image, author, date, type, content } = req.body;
+            const { title, previewContent, image, author, date, type, content,lenguaje } = req.body;
             
-            const blog = await this.createBlogUseCase.run(title, previewContent, image, author, date, type, content);
+            const blog = await this.createBlogUseCase.run(title, previewContent, content, image, author, date,lenguaje, type);
 
             if (blog) {
                 return res.status(201).json({ success: true, data: blog });

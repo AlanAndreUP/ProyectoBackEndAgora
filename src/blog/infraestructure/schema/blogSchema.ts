@@ -8,7 +8,8 @@ const blogSchema = new Schema<Blog>({
     image: { type: String, required: true },
     author: { type: String, required: true },
     date: { type: Date, required: true },
-    type: { type: String, required: true, enum: BlogType },
+    lenguaje :{type:String, requiered:true},
+    type: { type: String, required: true},
 })
 
 export default blogSchema
