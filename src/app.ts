@@ -4,16 +4,19 @@ import morgan from "morgan";
 import signale from "signale";
 import helmet from "helmet";
 import userRoutes from "./users/infraestructure/userRoutes";
+import blogRoutes from "./blog/infraestructure/blogRoutes";
 
 
 export const createServer = (port: number) => {
     const app: Application = express();
+ 
     app.use(express.json());
-    app.use(cors()); 
+    app.use(cors());
     app.use(morgan('dev'));
     app.use(helmet());
     app.use(express.urlencoded({ extended: true }));
     app.use("/users", userRoutes);
+    app.use("/blog", blogRoutes);
 
     return {
         app: app,

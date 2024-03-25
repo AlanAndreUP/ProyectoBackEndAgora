@@ -11,9 +11,9 @@ export class CreateUserUseCase {
    ){}
 
    async run(
-      name: string,
-      lastName: string,
-      email: string,
+      nombre: string,
+      apellido: string,
+      correoElectronico: string,
       profesion: string,
       empresa:string,
       pais:string,
@@ -21,10 +21,10 @@ export class CreateUserUseCase {
    ): Promise<User | null> {
       try{
          const user = new User(
-            name,
-            lastName,
-             profesion,
-            this.encrypterService.hashEmail(email),
+            nombre,
+            apellido,
+            correoElectronico,
+            this.encrypterService.hashProfession(profesion),
             empresa,
             pais,
             role
