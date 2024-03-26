@@ -1,8 +1,8 @@
 import database from "./database/database";
 import { createServer } from "./app";
-const PORT = process.env.PORT || 3000;
+
 export const startApp = () => {
-    const port = Number(PORT);
+    const port = Number(process.env.PORT);
 
     database().connect();
     createServer(port).run();

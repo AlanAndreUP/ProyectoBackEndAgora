@@ -48,8 +48,7 @@ export class NotificacionNewUser implements INotificationNewUser {
             <body>
               <div class="container">
                 <h1>Bienvenido ${user.name}!</h1>
-                <p>Gracias por registrarte en nuestra plataforma.</p>
-                <!-- Puedes agregar más contenido HTML aquí -->
+                <p>Gracias por registrarte a nuestro newsletter.</p>
               </div>
             </body>
           </html>
