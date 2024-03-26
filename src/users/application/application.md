@@ -27,16 +27,18 @@
 
 hashProfession: Se encarga de cifrar la profesión.
 
-authProfession: Verifica o autentica una profesión (probablemente comparando una profesión en texto plano con la versión cifrada).
+authProfession: Verifica o autentica una profesión .
 
 **3\. ITokenService**
 
-1.  **Interfaz:** Define métodos para trabajar con tokens (probablemente tokens JWT para autenticación).
+1.  **Interfaz:** Define métodos para trabajar con tokens.
     
 
 generateToken: Crea un token a partir de una carga útil de datos.
 
 verifyToken: Verifica la validez de un token.
+
+Esto se hizo para demostrar que se sabe usar JWT, pero no encontre un caso de uso valido para implementarlo,.
 
 **4\. NotificacionNewUserUseCase**
 

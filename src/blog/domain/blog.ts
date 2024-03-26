@@ -1,10 +1,11 @@
 export enum BlogType {
-    TUTORIAL = "Tutorial",
-    NOTICIA = "Noticia",
-    OPINION = "Opinión",
-    RESENA = "Reseña",
-    GUÍA = "Guía",
-    OTRO = "Otro"
+    Blog = "Blog",
+    Convocatoriaabierta = "Convocatoriaabierta",
+    Oferta = "Oferta",
+    Programa = "Programa",
+    ProgramaE = "ProgramaE",
+    ProgramasEX = "ProgramasEX",
+    Prensa = "Prensa"
 }
 
 export class Blog {
