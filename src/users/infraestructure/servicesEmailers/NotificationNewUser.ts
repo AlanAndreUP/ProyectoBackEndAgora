@@ -26,7 +26,7 @@ export class NotificacionNewUser implements INotificationNewUser {
           <html>
             <head>
               <style>
-                
+                /* Aquí puedes agregar tu CSS para estilizar el correo */
                 body {
                   font-family: Arial, sans-serif;
                   background-color: #f2f2f2;
